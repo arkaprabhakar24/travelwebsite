@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Index Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Travel Itinerary Planner</h1>
+    </header>
+    
+    <section id="services">
+        <h2>Our Services</h2>
+        <p>You can plan your trip easily</p>
+        <p>Here you can book Flights, Hotels, other Activties related to travel plan</p>
+        <h4>Login to plan your first trip</h4>
+    </section>
+    <section id="forms">
+        <div id="register-form">
+            <h2>Register</h2>
+            <form id="register-form" action="register.php" method="post" onsubmit="return validateRegisterForm()">
+                <label for="reg-username">Name:</label>
+                <input type="text" id="reg-username" name="username" required>
+                <label for="reg-email">Email:</label>
+                <input type="email" id="reg-email" name="email" required>
+                <label for="reg-password">Password:</label>
+                <input type="password" id="reg-password" name="password" required>
+                <button type="submit">Register</button>
+                <p id="register-message"></p>
+            </form>
+        </div>
+        <div id="login-form">
+            <h2>Login</h2>
+            <form id="login-form" action="login.php" method="post" onsubmit="return validateLoginForm()">
+                <label for="username">Username:</label>
+                <input type="test" id="login-email" name="username" required>
+                <label for="login-password">Password:</label>
+                <input type="password" id="login-password" name="password" required>
+                <button type="submit">Login</button>
+                <p id="login-message"></p>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Travel Itinerary Planner. All rights reserved.</p>
+    </footer>
+</body>
+</html>

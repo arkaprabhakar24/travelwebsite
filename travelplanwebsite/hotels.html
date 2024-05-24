@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Book Hotels</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="booking.html">Booking</a>
+        <a href="booking_history.html">Booking History</a>
+        <a href="contact_us.html">Contact Us</a>
+        <a href="logout.php">Logout</a>
+    </nav>
+    <h1>Book Hotels</h1>
+    <form id="hotel-booking-form" action="book.php" method="POST">
+        <input type="hidden" name="hotel_id" value="1"> <!-- Replace with dynamic hotel ID -->
+        <label for="hotel">Select Hotel:</label>
+        <select name="hotel_id" id="hotel" required>
+            <!-- Options should be populated dynamically with available hotels -->
+            <option value="1">Hotel 1</option>
+            <option value="2">Hotel 2</option>
+        </select>
+        <button type="submit">Book Hotel</button>
+    </form>
+</body>
+</html>
